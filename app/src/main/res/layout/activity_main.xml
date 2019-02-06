@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_content"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+
+        android:id="@+id/icon"
+        android:layout_centerInParent="true"
+        android:src="@drawable/boxgame"
+        android:layout_width="250dp"
+        android:layout_height="250dp" />
+
+    <TextView
+
+        android:id="@+id/boxname"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="20dp"
+        android:text="Boxing Game"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:fontFamily="@font/xsotik"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:translationX="-200dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/gamelinupper"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/upbox1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+                <ImageView
+                    android:src="@drawable/boxitem"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:text="Vampire Cable"
+                    android:textColor="@color/gradient_end_color"
+                    android:textSize="14sp"
+                    android:layout_centerInParent="true"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/upbox2"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:layout_height="80dp">
+                <ImageView
+                    android:src="@drawable/boxitem"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:text="Vegetable"
+                    android:textColor="@color/gradient_end_color"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/upbox3"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+                <ImageView
+                    android:src="@drawable/boxitem"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:text="Variable"
+                    android:textColor="@color/gradient_end_color"
+                    android:textSize="14sp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/convayerbelt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/gamelin"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/box1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+                <ImageView
+                    android:src="@drawable/box"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:text="Vampire Cable"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/box2"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+                <ImageView
+                    android:src="@drawable/box"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:text="Vegetable"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/box3"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+                <ImageView
+                    android:src="@drawable/box"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:text="Variable"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/convayerbelt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
